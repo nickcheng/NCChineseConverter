@@ -1,8 +1,3 @@
-Title: Chinese Converter
-Author: Nick Cheng
-Create Date: 2013-2-28
-Last Modified: 2013-3-4
-
 # NCChineseConverter #
 
 ## 简介 ##
