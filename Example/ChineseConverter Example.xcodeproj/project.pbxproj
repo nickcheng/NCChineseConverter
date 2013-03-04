@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		401F28A216DF54A0007071A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F28A116DF54A0007071A3 /* UIKit.framework */; };
+		401F28A416DF54A0007071A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F28A316DF54A0007071A3 /* Foundation.framework */; };
+		401F28A616DF54A0007071A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F28A516DF54A0007071A3 /* CoreGraphics.framework */; };
+		401F28AC16DF54A0007071A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 401F28AA16DF54A0007071A3 /* InfoPlist.strings */; };
+		401F28AE16DF54A0007071A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28AD16DF54A0007071A3 /* main.m */; };
+		401F28B216DF54A0007071A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28B116DF54A0007071A3 /* AppDelegate.m */; };
+		401F28B416DF54A0007071A3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B316DF54A0007071A3 /* Default.png */; };
+		401F28B616DF54A0007071A3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B516DF54A0007071A3 /* Default@2x.png */; };
+		401F28B816DF54A0007071A3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B716DF54A0007071A3 /* Default-568h@2x.png */; };
+		401F28C016DF56ED007071A3 /* NCChineseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28BF16DF56EC007071A3 /* NCChineseConverter.m */; };
+		401F28C316DF5768007071A3 /* NSString+NCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28C216DF5768007071A3 /* NSString+NCAddition.m */; };
+		401F28C916DF57E8007071A3 /* zh2CN.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C516DF57E8007071A3 /* zh2CN.txt */; };
+		401F28CA16DF57E8007071A3 /* zh2HK.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C616DF57E8007071A3 /* zh2HK.txt */; };
+		401F28CB16DF57E8007071A3 /* zh2SG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C716DF57E8007071A3 /* zh2SG.txt */; };
+		401F28CC16DF57E8007071A3 /* zh2TW.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C816DF57E8007071A3 /* zh2TW.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		401F289E16DF54A0007071A3 /* ChineseConverter Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChineseConverter Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		401F28A116DF54A0007071A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		401F28A316DF54A0007071A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		401F28A516DF54A0007071A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		401F28A916DF54A0007071A3 /* ChineseConverter Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChineseConverter Example-Info.plist"; sourceTree = "<group>"; };
+		401F28AB16DF54A0007071A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		401F28AD16DF54A0007071A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		401F28AF16DF54A0007071A3 /* ChineseConverter Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChineseConverter Example-Prefix.pch"; sourceTree = "<group>"; };
+		401F28B016DF54A0007071A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		401F28B116DF54A0007071A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		401F28B316DF54A0007071A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		401F28B516DF54A0007071A3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		401F28B716DF54A0007071A3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		401F28BE16DF56EC007071A3 /* NCChineseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NCChineseConverter.h; path = ../../ChineseConverter/NCChineseConverter.h; sourceTree = "<group>"; };
+		401F28BF16DF56EC007071A3 /* NCChineseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NCChineseConverter.m; path = ../../ChineseConverter/NCChineseConverter.m; sourceTree = "<group>"; };
+		401F28C116DF5767007071A3 /* NSString+NCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NCAddition.h"; path = "../../ChineseConverter/NSString+NCAddition.h"; sourceTree = "<group>"; };
+		401F28C216DF5768007071A3 /* NSString+NCAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NCAddition.m"; path = "../../ChineseConverter/NSString+NCAddition.m"; sourceTree = "<group>"; };
+		401F28C516DF57E8007071A3 /* zh2CN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2CN.txt; sourceTree = "<group>"; };
+		401F28C616DF57E8007071A3 /* zh2HK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2HK.txt; sourceTree = "<group>"; };
+		401F28C716DF57E8007071A3 /* zh2SG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2SG.txt; sourceTree = "<group>"; };
+		401F28C816DF57E8007071A3 /* zh2TW.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2TW.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		401F289B16DF54A0007071A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401F28A216DF54A0007071A3 /* UIKit.framework in Frameworks */,
+				401F28A416DF54A0007071A3 /* Foundation.framework in Frameworks */,
+				401F28A616DF54A0007071A3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		401F289516DF54A0007071A3 = {
+			isa = PBXGroup;
+			children = (
+				401F28A716DF54A0007071A3 /* ChineseConverter Example */,
+				401F28A016DF54A0007071A3 /* Frameworks */,
+				401F289F16DF54A0007071A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		401F289F16DF54A0007071A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				401F289E16DF54A0007071A3 /* ChineseConverter Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		401F28A016DF54A0007071A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				401F28A116DF54A0007071A3 /* UIKit.framework */,
+				401F28A316DF54A0007071A3 /* Foundation.framework */,
+				401F28A516DF54A0007071A3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		401F28A716DF54A0007071A3 /* ChineseConverter Example */ = {
+			isa = PBXGroup;
+			children = (
+				401F28C416DF57E8007071A3 /* Resources */,
+				401F28B016DF54A0007071A3 /* AppDelegate.h */,
+				401F28B116DF54A0007071A3 /* AppDelegate.m */,
+				401F28A816DF54A0007071A3 /* Supporting Files */,
+				401F28BE16DF56EC007071A3 /* NCChineseConverter.h */,
+				401F28BF16DF56EC007071A3 /* NCChineseConverter.m */,
+				401F28C116DF5767007071A3 /* NSString+NCAddition.h */,
+				401F28C216DF5768007071A3 /* NSString+NCAddition.m */,
+			);
+			path = "ChineseConverter Example";
+			sourceTree = "<group>";
+		};
+		401F28A816DF54A0007071A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				401F28A916DF54A0007071A3 /* ChineseConverter Example-Info.plist */,
+				401F28AA16DF54A0007071A3 /* InfoPlist.strings */,
+				401F28AD16DF54A0007071A3 /* main.m */,
+				401F28AF16DF54A0007071A3 /* ChineseConverter Example-Prefix.pch */,
+				401F28B316DF54A0007071A3 /* Default.png */,
+				401F28B516DF54A0007071A3 /* Default@2x.png */,
+				401F28B716DF54A0007071A3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		401F28C416DF57E8007071A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				401F28C516DF57E8007071A3 /* zh2CN.txt */,
+				401F28C616DF57E8007071A3 /* zh2HK.txt */,
+				401F28C716DF57E8007071A3 /* zh2SG.txt */,
+				401F28C816DF57E8007071A3 /* zh2TW.txt */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		401F289D16DF54A0007071A3 /* ChineseConverter Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401F28BB16DF54A0007071A3 /* Build configuration list for PBXNativeTarget "ChineseConverter Example" */;
+			buildPhases = (
+				401F289A16DF54A0007071A3 /* Sources */,
+				401F289B16DF54A0007071A3 /* Frameworks */,
+				401F289C16DF54A0007071A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChineseConverter Example";
+			productName = "ChineseConverter Example";
+			productReference = 401F289E16DF54A0007071A3 /* ChineseConverter Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		401F289616DF54A0007071A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = NC;
+			};
+			buildConfigurationList = 401F289916DF54A0007071A3 /* Build configuration list for PBXProject "ChineseConverter Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 401F289516DF54A0007071A3;
+			productRefGroup = 401F289F16DF54A0007071A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				401F289D16DF54A0007071A3 /* ChineseConverter Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		401F289C16DF54A0007071A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401F28AC16DF54A0007071A3 /* InfoPlist.strings in Resources */,
+				401F28B416DF54A0007071A3 /* Default.png in Resources */,
+				401F28B616DF54A0007071A3 /* Default@2x.png in Resources */,
+				401F28B816DF54A0007071A3 /* Default-568h@2x.png in Resources */,
+				401F28C916DF57E8007071A3 /* zh2CN.txt in Resources */,
+				401F28CA16DF57E8007071A3 /* zh2HK.txt in Resources */,
+				401F28CB16DF57E8007071A3 /* zh2SG.txt in Resources */,
+				401F28CC16DF57E8007071A3 /* zh2TW.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		401F289A16DF54A0007071A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401F28AE16DF54A0007071A3 /* main.m in Sources */,
+				401F28B216DF54A0007071A3 /* AppDelegate.m in Sources */,
+				401F28C016DF56ED007071A3 /* NCChineseConverter.m in Sources */,
+				401F28C316DF5768007071A3 /* NSString+NCAddition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		401F28AA16DF54A0007071A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				401F28AB16DF54A0007071A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		401F28B916DF54A0007071A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		401F28BA16DF54A0007071A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		401F28BC16DF54A0007071A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChineseConverter Example/ChineseConverter Example-Prefix.pch";
+				INFOPLIST_FILE = "ChineseConverter Example/ChineseConverter Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		401F28BD16DF54A0007071A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChineseConverter Example/ChineseConverter Example-Prefix.pch";
+				INFOPLIST_FILE = "ChineseConverter Example/ChineseConverter Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		401F289916DF54A0007071A3 /* Build configuration list for PBXProject "ChineseConverter Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401F28B916DF54A0007071A3 /* Debug */,
+				401F28BA16DF54A0007071A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		401F28BB16DF54A0007071A3 /* Build configuration list for PBXNativeTarget "ChineseConverter Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401F28BC16DF54A0007071A3 /* Debug */,
+				401F28BD16DF54A0007071A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 401F289616DF54A0007071A3 /* Project object */;
+}
