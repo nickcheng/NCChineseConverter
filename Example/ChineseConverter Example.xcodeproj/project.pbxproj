@@ -16,12 +16,12 @@
 		401F28B416DF54A0007071A3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B316DF54A0007071A3 /* Default.png */; };
 		401F28B616DF54A0007071A3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B516DF54A0007071A3 /* Default@2x.png */; };
 		401F28B816DF54A0007071A3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 401F28B716DF54A0007071A3 /* Default-568h@2x.png */; };
-		401F28C016DF56ED007071A3 /* NCChineseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28BF16DF56EC007071A3 /* NCChineseConverter.m */; };
-		401F28C316DF5768007071A3 /* NSString+NCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28C216DF5768007071A3 /* NSString+NCAddition.m */; };
 		401F28C916DF57E8007071A3 /* zh2CN.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C516DF57E8007071A3 /* zh2CN.txt */; };
 		401F28CA16DF57E8007071A3 /* zh2HK.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C616DF57E8007071A3 /* zh2HK.txt */; };
 		401F28CB16DF57E8007071A3 /* zh2SG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C716DF57E8007071A3 /* zh2SG.txt */; };
 		401F28CC16DF57E8007071A3 /* zh2TW.txt in Resources */ = {isa = PBXBuildFile; fileRef = 401F28C816DF57E8007071A3 /* zh2TW.txt */; };
+		401F28D116E5D0BF007071A3 /* NSString+NCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28CE16E5D0BF007071A3 /* NSString+NCAddition.m */; };
+		401F28D216E5D0BF007071A3 /* NCChineseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 401F28D016E5D0BF007071A3 /* NCChineseConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,14 +38,14 @@
 		401F28B316DF54A0007071A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		401F28B516DF54A0007071A3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		401F28B716DF54A0007071A3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		401F28BE16DF56EC007071A3 /* NCChineseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NCChineseConverter.h; path = ../../ChineseConverter/NCChineseConverter.h; sourceTree = "<group>"; };
-		401F28BF16DF56EC007071A3 /* NCChineseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NCChineseConverter.m; path = ../../ChineseConverter/NCChineseConverter.m; sourceTree = "<group>"; };
-		401F28C116DF5767007071A3 /* NSString+NCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NCAddition.h"; path = "../../ChineseConverter/NSString+NCAddition.h"; sourceTree = "<group>"; };
-		401F28C216DF5768007071A3 /* NSString+NCAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NCAddition.m"; path = "../../ChineseConverter/NSString+NCAddition.m"; sourceTree = "<group>"; };
 		401F28C516DF57E8007071A3 /* zh2CN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2CN.txt; sourceTree = "<group>"; };
 		401F28C616DF57E8007071A3 /* zh2HK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2HK.txt; sourceTree = "<group>"; };
 		401F28C716DF57E8007071A3 /* zh2SG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2SG.txt; sourceTree = "<group>"; };
 		401F28C816DF57E8007071A3 /* zh2TW.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh2TW.txt; sourceTree = "<group>"; };
+		401F28CD16E5D0BF007071A3 /* NSString+NCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NCAddition.h"; path = "../../NCChineseConverter/NSString+NCAddition.h"; sourceTree = "<group>"; };
+		401F28CE16E5D0BF007071A3 /* NSString+NCAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NCAddition.m"; path = "../../NCChineseConverter/NSString+NCAddition.m"; sourceTree = "<group>"; };
+		401F28CF16E5D0BF007071A3 /* NCChineseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NCChineseConverter.h; path = ../../NCChineseConverter/NCChineseConverter.h; sourceTree = "<group>"; };
+		401F28D016E5D0BF007071A3 /* NCChineseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NCChineseConverter.m; path = ../../NCChineseConverter/NCChineseConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +92,11 @@
 		401F28A716DF54A0007071A3 /* ChineseConverter Example */ = {
 			isa = PBXGroup;
 			children = (
+				401F28D316E5D0C4007071A3 /* NCChineseConverter */,
 				401F28C416DF57E8007071A3 /* Resources */,
 				401F28B016DF54A0007071A3 /* AppDelegate.h */,
 				401F28B116DF54A0007071A3 /* AppDelegate.m */,
 				401F28A816DF54A0007071A3 /* Supporting Files */,
-				401F28BE16DF56EC007071A3 /* NCChineseConverter.h */,
-				401F28BF16DF56EC007071A3 /* NCChineseConverter.m */,
-				401F28C116DF5767007071A3 /* NSString+NCAddition.h */,
-				401F28C216DF5768007071A3 /* NSString+NCAddition.m */,
 			);
 			path = "ChineseConverter Example";
 			sourceTree = "<group>";
@@ -128,6 +125,17 @@
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
+		};
+		401F28D316E5D0C4007071A3 /* NCChineseConverter */ = {
+			isa = PBXGroup;
+			children = (
+				401F28CD16E5D0BF007071A3 /* NSString+NCAddition.h */,
+				401F28CE16E5D0BF007071A3 /* NSString+NCAddition.m */,
+				401F28CF16E5D0BF007071A3 /* NCChineseConverter.h */,
+				401F28D016E5D0BF007071A3 /* NCChineseConverter.m */,
+			);
+			name = NCChineseConverter;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -200,8 +208,8 @@
 			files = (
 				401F28AE16DF54A0007071A3 /* main.m in Sources */,
 				401F28B216DF54A0007071A3 /* AppDelegate.m in Sources */,
-				401F28C016DF56ED007071A3 /* NCChineseConverter.m in Sources */,
-				401F28C316DF5768007071A3 /* NSString+NCAddition.m in Sources */,
+				401F28D116E5D0BF007071A3 /* NSString+NCAddition.m in Sources */,
+				401F28D216E5D0BF007071A3 /* NCChineseConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
