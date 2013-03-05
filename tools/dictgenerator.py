@@ -6,19 +6,6 @@ import sys
 WIKI_SOURCE = 'http://svn.wikimedia.org/svnroot/mediawiki/trunk/phase3/includes/ZhConversion.php'
 WIKI_SOURCE_LOCAL_FILE = 'ZhConversion.php'
 
-# 最大正向匹配
-def conv(string,dic):
-    i = 0
-    while i < len(string):
-        for j in range(len(string) - i, 0, -1):
-            if string[i:][:j] in dic:
-                t = dic[string[i:][:j]]
-                string = string[:i] + t + string[i:][j:]
-                i += len(t) - 1
-                break
-        i += 1
-    return string
- 
 # 生成转换字典
 def mdic():    
     table = open(WIKI_SOURCE_LOCAL_FILE,'r').readlines()
