@@ -6,13 +6,24 @@ NCChineseConverter 是一个 **基于 Objective-C** 的中文简繁正转换库.
 
 本库的基本实现原理: 从 Mediawiki 提供的[字典](http://svn.wikimedia.org/svnroot/mediawiki/trunk/phase3/includes/ZhConversion.php)中提取数据, 转换为自己需要的格式, 然后用最大正向匹配算法进行字符替换.
 
+### 特点 ###
+
+* 可以只使用单一词库
+* 可扩充自定义词库
+* 提供 NSString 的 Category
+
 ## 使用方法 ##
+
+1. 用词典工具生成词典
+2. 把生成的词典放在项目的 Resources 目录下
+3. 按如下方式引用转换库和调用
 
 ```objective-c
 #import "NCChineseConverter.h"
 …
 NSString *oriString = @"";
 NSString *result = [[NCChineseConverter sharedInstance] convert:oriString withDict:NCChineseConverterDictTypezh2TW];
+…
 ```
 
 ### Tool ###
@@ -22,10 +33,30 @@ NSString *result = [[NCChineseConverter sharedInstance] convert:oriString withDi
 python dictgenerator.py
 ```
 
-用本地词库生成词典:
+用本地词库生成词典(适用于已经下载了词库文件):
 ```
 python dictgenerator.py n
 ```
+
+利用词典工具会在当前目录生成如下词典文件:
+* zh2TW.txt (简体 -> 台湾正体)
+* zh2HK.txt (简体 -> 港澳繁体)
+* zh2SG.txt (简体 -> 新马繁体)
+* zh2CN.txt (繁体/正体 -> 大陆简体)
+
+请勿修改文件名, 转换库是严格按照文件名来读取词典的. 
+
+### 自定义扩充转换词组 ###
+
+词典工具是根据 Mediawiki 的词库来进行词典生成, 所以要等待 Mediawiki 的词库更新才能得到新的词典. 如果你有一些 Mediawiki 里没有的词语要扩充, 则可以使用该方法来使用.
+
+使用前缀相同的字典文件来进行自定义词组的扩充, 转换库会自动加载对应的扩充字典.
+
+比如, 把你自己的 **简体 -> 台湾正体** 词典命名为 **zh2TW.custom.txt**, 这样转换库就可以自动加载这个词典并在转换时使用.
+
+### 备注 ###
+
+虽然词典工具一次生成四个词典, 但是你可以视情况只使用其中一个或多个. 需要注意的事如果你没有在项目中放入某个词典文件, 那么要避免在代码里调用该字典.
 
 ## 未来改进 ##
 
