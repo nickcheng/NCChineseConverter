@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NCChineseConverter.h"
+#import "NSString+NCAddition.h"
 
 @implementation AppDelegate
 
@@ -16,8 +17,11 @@
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   
   // Override point for customization after application launch.
-  NSString *result = [[NCChineseConverter sharedInstance] convert:@"大卫·贝克汉姆在老挝见到了布什" withDict:NCChineseConverterDictTypezh2HK];
+  NSString *oriString = @"大卫·贝克汉姆在老挝见到了布什";
+  NSString *result = oriString.chineseStringTW;
+  NSString *result2 = [[NCChineseConverter sharedInstance] convert:oriString withDict:NCChineseConverterDictTypezh2HK];
   NSLog(@"%@", result);
+  NSLog(@"%@", result2);
   
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
