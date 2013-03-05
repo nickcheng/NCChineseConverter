@@ -69,7 +69,7 @@
     for (j = max; j > 0; j--) {
       NSRange range = NSMakeRange(i, j);
       NSString *subStr = [oriString substringWithRange:range];
-      if ([useDict.allKeys containsObject:subStr]) {
+      if (useDict[subStr]) {
         result = [result stringByAppendingString:useDict[subStr]];
         break;
       }
