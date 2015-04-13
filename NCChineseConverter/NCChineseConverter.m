@@ -62,10 +62,10 @@
   //
   NSString *result = @"";
   NSDictionary *useDict = _dict[dictTypeKey];
-  int i = 0;
+  NSInteger i = 0;
   while (i < oriString.length) {
-    int max = oriString.length - i;
-    int j;
+    NSInteger max = oriString.length - i;
+    NSInteger j;
     for (j = max; j > 0; j--) {
       NSRange range = NSMakeRange(i, j);
       NSString *subStr = [oriString substringWithRange:range];
