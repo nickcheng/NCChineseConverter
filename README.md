@@ -22,7 +22,8 @@ NCChineseConverter 是一个 **基于 Objective-C** 的中文简繁正转换库.
 #import "NCChineseConverter.h"
 …
 NSString *oriString = @"";
-NSString *result = [[NCChineseConverter sharedInstance] convert:oriString withDict:NCChineseConverterDictTypezh2TW];
+NSString *result = [[NCChineseConverter sharedInstance] convert:oriString 
+                                                       withDict:NCChineseConverterDictTypezh2TW];
 …
 ```
 
@@ -39,12 +40,15 @@ python dictgenerator.py n
 ```
 
 利用词典工具会在当前目录生成如下词典文件:
+
 * zh2TW.txt (简体 -> 台湾正体)
 * zh2HK.txt (简体 -> 港澳繁体)
 * zh2SG.txt (简体 -> 新马繁体)
 * zh2CN.txt (繁体/正体 -> 大陆简体)
 
-请勿修改文件名, 转换库是严格按照文件名来读取词典的. 
+方便起见, 我在 `dictionary` 目录中放了转换好的词典文件. 目录名称即为词典生成时间.
+
+注意: 请勿修改文件名, 转换库是严格按照文件名来读取词典的. 
 
 ### 自定义扩充转换词组 ###
 
@@ -56,7 +60,7 @@ python dictgenerator.py n
 
 ### 备注 ###
 
-虽然词典工具一次生成四个词典, 但是你可以视情况只使用其中一个或多个. 需要注意的事如果你没有在项目中放入某个词典文件, 那么要避免在代码里调用该字典.
+虽然词典工具一次生成四个词典, 但是你可以视情况只使用其中一个或多个. 需要注意的是如果你没有在项目中放入某个词典文件, 那么要避免在代码里调用该字典.
 
 ## 未来改进 ##
 
@@ -75,11 +79,11 @@ python dictgenerator.py n
 
 目前比较常用的转换方式主要是 **Wikipedia 的转换方式** 和 **OpenCC**.
 
-Wikipedia 进行简繁转换的操作流程参见: [简繁转换](http://zh.wikipedia.org/wiki/Wikipedia:繁简处理)
+Wikipedia 进行简繁转换的操作流程参见: [繁简处理](http://zh.wikipedia.org/wiki/Wikipedia:繁简处理)
 
 OpenCC 的库相对比较专业. 不过这是一个 C 库, 所以如果要在 iOS 下使用, 则需要自己把库编译成 iOS 可以使用的库再进行调用.
 
 ## 参考 ##
 
-* [OpenCC](http://code.google.com/p/opencc/)
+* [OpenCC](https://github.com/BYVoid/OpenCC)
 * [Python 简繁转换](http://gerry.lamost.org/blog/?p=603)
