@@ -3,7 +3,7 @@
 
 import sys
 
-WIKI_SOURCE = 'https://github.com/wikimedia/mediawiki/raw/master/languages/data/ZhConversion.php'
+WIKI_SOURCE = 'https://github.com/wikimedia/mediawiki/raw/master/includes/languages/data/ZhConversion.php'
 WIKI_SOURCE_LOCAL_FILE = 'ZhConversion.php'
 
 # 生成转换字典
@@ -29,15 +29,15 @@ def mdic():
 
 def downloadWikiSource():
     """docstring for downloadWikiSource"""
-    import urllib
-    print 'Downloading', WIKI_SOURCE_LOCAL_FILE, '...'
-    content = urllib.urlretrieve(WIKI_SOURCE, WIKI_SOURCE_LOCAL_FILE)
-    print 'Download accomplished.'
+    import urllib.request, urllib.parse, urllib.error
+    print('Downloading', WIKI_SOURCE_LOCAL_FILE, '...')
+    content = urllib.request.urlretrieve(WIKI_SOURCE, WIKI_SOURCE_LOCAL_FILE)
+    print('Download accomplished.')
 
 def makeDictFile():
-    print 'Parsing wiki source...'
+    print('Parsing wiki source...')
     [dic_TW, dic_HK, dic_SG, dic_CN] = mdic()
-    print 'Parse accomplished.'
+    print('Parse accomplished.')
     
     dic = {}
     dic['zh2TW'] = dic_TW
@@ -45,15 +45,15 @@ def makeDictFile():
     dic['zh2SG'] = dic_SG
     dic['zh2CN'] = dic_CN
     
-    print 'Saving dictionary files...'
-    for f in dic.keys():
+    print('Saving dictionary files...')
+    for f in list(dic.keys()):
         filename = f + '.txt'
         file = open(filename, 'w')
-        for k in dic[f].keys():
+        for k in list(dic[f].keys()):
             content = k + '\t' + dic[f][k] + '\n'
             file.write(content)
         file.close()
-    print 'Save accomplished.'
+    print('Save accomplished.')
 
 def main():
     v = sys.argv
@@ -63,3 +63,4 @@ def main():
     
 if __name__ == '__main__':
     main()
+
